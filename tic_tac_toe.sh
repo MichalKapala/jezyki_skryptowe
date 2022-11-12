@@ -2,8 +2,8 @@
 
 MARKERS=("o" "x")
 SAVE_PATH="./game_save"
-MOVE_REGEX='^[0-2]$'
-MENU_REGEX='^[1-3]$'
+MOVE_REGEX='^[0-2]{1}$'
+MENU_REGEX='^[1-3]{1}$'
 
 function reset_game {
     BOARD_STATUS=(" " " " " " " " " " " " " " " " " ")
@@ -14,7 +14,8 @@ function reset_game {
 }
 
 function get_field {
-    echo "Player $current_player"
+    move_result=0
+    echo "Player $(($current_player + 1))"
     while [ "$move_result" != "1" ]; do
         echo "Insert row"
         read row
@@ -64,7 +65,7 @@ function check_status {
 
 function print_game_status {
     if [ "$game_status" == "1" ]; then
-        echo "Player $current_player wins!! "
+        echo "Player $(($current_player + 1)) wins!! "
     else
         echo "Draw!! "
     fi
@@ -85,7 +86,7 @@ function print_board {
 
 function validate_move() {
 
-    if [[ ! $1 =~ $MOVE_REGEX ]] || [[ ! $2 =~ $MOVE_REGEX ]]; then
+    if [[ ! ($1 =~ $MOVE_REGEX) ]] || [[ ! $2 =~ $MOVE_REGEX ]]; then
         echo "Entered wrong column or line, please enter correct one "
         return 0
     elif [ "${BOARD_STATUS[$(((3 * $1) + $2))]}" != " " ]; then
@@ -121,6 +122,7 @@ function load_save {
         done
         echo "$move_counter"
         current_player=$(($move_counter % 2))
+        total_moves=$move_counter
         start_game
     else
         echo "Save file does not exist "
@@ -155,6 +157,8 @@ function start_game {
         switch_players
         make_save
     done
+    clear
+    print_board
     print_game_status
 }
 
