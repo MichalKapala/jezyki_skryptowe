@@ -1,0 +1,10 @@
+[
+  {
+    "name": "ingredients",
+    "pattern": "(\\bsalt\\b|\\bpepper\\b|\\bsalad\\b|\\bbun\\b|\\boil\\b|\\bflour\\b|\\bgarlic\\b|\\bsugar\\b|\\bwater\\b|\\bonion\\b|\\bolive\\b|\\bchicken\\b|\\bjuice\\b|\\bmilk\\b|\\blemon\\b|\\bbutter\\b|\\begg\\b|\\bcheese\\b|\\bwheat\\b|\\bvegetable\\b|\\bvanilla\\b|\\bvinegar\\b|\\bparsley\\b|\\bhoney\\b|\\bsoy\\b|\\bwine\\b|\\bseeds\\b|\\bcelery\\b|\\brice\\b|\\bcinnamon\\b|\\btomato\\b|\\bmayonnaise\\b|\\bbread\\b|\\beggs\\b|\\bonions\\b|\\byeast\\b|\\bbroth\\b|\\btomatoes\\b|\\bcream\\b|\\bcloves\\b|\\bthyme\\b|\\bginger\\b|\\bbeans\\b|\\bsoda\\b|\\bbasil\\b|\\bmushrooms\\b|\\bapple\\b|\\bparmesan\\b|\\bmascarpone\\b|\\byogurt\\b|\\bstock\\b|\\bbell\\b|\\boats\\b|\\bsodium\\b|\\bbeef\\b|\\bcarrot\\b|\\boregano\\b|\\bchocolate\\b|\\bcoffee\\b|\\bcocoa\\b|\\bbiscuits\\b|\\bamaretto\\b|\\bcumin\\b|\\bpaprika\\b|\\bsesame\\b|\\bmustard\\b|\\bspinach\\b|\\bcorn\\b|\\bpotatoes\\b|\\bcoconut\\b|\\bcarrots\\b|\\bnutmeg\\b|\\bcilantro\\b|\\braisins\\b|\\bchili\\b|\\bsyrup\\b|\\bpeas\\b|\\bpeanut\\b|\\balmond\\b|\\bwalnuts\\b|\\bcanned\\b|\\blime\\b|\\bleaf\\b|\\bpineapple\\b|\\bmargarine\\b|\\bcabbage\\b|\\bcucumber\\b|\\bbroccoli\\b|\\bcornstarch\\b|\\bzucchini\\b|\\bcoriander\\b|\\bpaste\\b|\\bturkey\\b|\\bbanana\\b|\\balmonds\\b|\\bnuts\\b|\\bmaple\\b|\\bcheddar\\b|\\bscallions\\b|\\blettuce\\b|\\bdill\\b|\\bmeat\\b|\\bfish\\b|\\bdairy\\b|\\bgluten\\b|\\balcohol\\b|\\bshrimps\\b|\\bcitrus\\b|\\bham\\b|\\bketchup\\b|\\bbacon\\b|\\bsauce\\b|\\btomato\\ sauce\\b|\\bsausage\\b|\\bbechamel\\ sauce\\b)"
+  },
+  {
+    "name": "dish",
+    "pattern": "(\\bLasagne\\b|\\bPizza\\b|\\bHot\\-dog\\b|\\bBurger\\b|\\bSpaghetti\\ Carbonara\\b|\\bTiramisu\\b)"
+  }
+]

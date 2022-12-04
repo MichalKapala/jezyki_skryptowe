@@ -1,0 +1,72 @@
+version: "3.1"
+
+stories:
+
+- story: list menu
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: how_are_you
+  - action: utter_imgood
+  - intent: ask_menu
+  - action: action_list_menu
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask open
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_open_hours
+    - action: action_list_open_hours
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: ask detailed open
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_detail_open_hours
+      entities:
+        - week_day: "Wednesday"
+        - hour: 8
+    - action: action_answer_open_hours
+    - intent: ask_menu
+    - action: action_list_menu
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: make an order
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_menu
+    - action: action_list_menu
+    - intent: make_simple_order
+    - action: action_process_simple_order
+    - action: utter_anything_else
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: make an special order
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_menu
+    - action: action_list_menu
+    - intent: ask_for_ingredients
+    - action: action_list_ingredients
+    - intent: make_extra_order
+    - action: action_process_extra_order
+    - action: utter_anything_else
+    - intent: summarize_order
+    - action: action_summarize_order
+    - intent: make_extra_order
+    - action: action_process_extra_order
+    - action: utter_anything_else
+    - intent: confirm_order
+    - action: action_confirm_order
+    - action: action_reset_order
+    - intent: goodbye
+    - action: utter_goodbye
+

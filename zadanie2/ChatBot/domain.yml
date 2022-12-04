@@ -1,0 +1,117 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - how_are_you
+  - affirm
+  - deny
+  - bot_challenge
+  - ask_if_can_order
+  - make_simple_order
+  - make_extra_order
+  - ask_menu
+  - ask_open_hours
+  - ask_detail_open_hours
+  - ask_for_ingredients
+  - summarize_order
+  - confirm_order
+  - reset_order
+  - ask_what_can_bot_do
+
+entities:
+  - dish
+  - ingredients:
+     roles:
+      - extra_ingredients
+      - less_ingredients
+  - number_of_dishes
+  - week_day
+  - hour
+
+slots:
+  dish:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: dish
+
+  extra_ingredients:
+    type: list
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: ingredients
+        role: extra_ingredients
+
+  less_ingredients:
+    type: list
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: ingredients
+        role: less_ingredients
+
+  week_day:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: week_day
+
+  hour:
+    type: float
+    min_value: 0
+    max_value: 24
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: hour
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you"
+  - text: "Hello!"
+  - text: "Hi there!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "Have a nice day"
+  - text: "See you later"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot,created by Michal."
+  - text: "I'm your father Luke"
+
+  utter_imgood:
+    - text: "I'm good, thanks! How can I help you?"
+    - text: "Great, thanks! How can I help you?"
+    - text: "Pretty good, what can i do for you?"
+
+  utter_canorder:
+    - text: "Yes, tell me what would you like to order"
+    - text: "Naturally, what would you like?"
+
+  utter_anything_else:
+    - text: "Great, anything else? "
+    - text: "Would you like to order something more?"
+
+  utter_answer_purpose:
+    - text: "YOu can ask me about open hours, our menu and some dish details and you can order food :)"
+
+actions:
+  - action_list_menu
+  - action_list_open_hours
+  - action_answer_open_hours
+  - action_process_simple_order
+  - action_process_extra_order
+  - action_list_ingredients
+  - action_summarize_order
+  - action_confirm_order
+  - action_reset_order
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

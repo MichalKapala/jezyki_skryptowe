@@ -1,0 +1,189 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: how_are_you
+  examples: |
+    - how are you?
+    - how are you doing?
+    - how is it going?
+    - how's it going?
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_what_can_bot_do
+  examples: |
+    - what can you do?
+    - what is your purpose?
+    - how can you help me?
+    - what do you do?
+    - what information can ou give me
+    - what kind of information do you have
+
+- intent: ask_menu
+  examples: |
+    - show me menu
+    - could you show me menu?
+    - what dishes do you serve?
+    - can you tell me the menu?
+    - what can i order here? 
+    - can i see the menu?
+
+- intent: ask_open_hours
+  examples: |
+    - are you open right now?
+    - show me your open hours
+    - when are you open?
+    - when can I visit you?
+
+- intent: ask_detail_open_hours
+  examples: |
+    - are you open on [Monday](week_day) at [12](hour) o'clock?
+    - will you be open on [Tuesday](week_day) at [20](hour) o'clock?
+    - can I visit you on [Wednesday](week_day)?
+    - are you open on [Thursday](week_day)?
+    - is your restaurant open on [Friday](week_day)?
+    - what is restaurant working hours on [Saturday](week_day)?
+    - can we come eat on [Sunday](week_day) at [13](hour)?
+    - are you open at [16](hour)?
+    - can i visit you at [18](hour)?
+    - are you open on [Saturday](week_day) at [19](hour)?
+    - when do you open on [Monday](week_day)?
+    - are you open [today](week_day)?
+    - are you open [tomorrow](week_day)?
+
+- intent: ask_for_ingredients
+  examples: |
+    - what ingredients are in [pizza](dish)?
+    - what is inside [burger](dish)?
+    - does the [carbonara spaghetti](dish) includes [meat]{"entity": "ingredients", "role": "extra_ingredients"}?
+    - show me ingredients of [burger](dish)
+    - what does [Hot-dog](dish) contains? 
+
+- intent: ask_if_can_order
+  examples: |
+    - can i order here a food?
+    - is it possible to order here a food?
+    - can i make an order?
+    - can i order food here? 
+    - i want to make an order
+    - now i will order
+
+- intent: make_simple_order
+  examples: |
+    - i would like to order [pizza](dish)
+    - i would like [hot-dog](dish)
+    - can i order an [burger](dish)?
+    - can i order [tiramisu](dish)?
+    - i would like to order [pizza](dish).
+    - can you make me a [burger](dish)?
+    - can i get a [spaghetti carbonara](dish)?
+
+- intent: make_extra_order
+  examples: |
+    - i would like to order [pizza](dish) with [ham]{"entity": "ingredients", "role": "extra_ingredients"} and [onion]{"entity": "ingredients", "role": "extra_ingredients"}
+    - i would like [hot-dog](dish) with extra [ketchup]{"entity": "ingredients", "role": "extra_ingredients"}.
+    - i want to order a [burger](dish), and please add [bacon]{"entity": "ingredients", "role": "extra_ingredients"}
+    - can i order [tiramisu](dish) with additional [chocolate]{"entity": "ingredients", "role": "extra_ingredients"}?
+    - can i order [lasagne](dish) with [chesse]{"entity": "ingredients", "role": "extra_ingredients"}?
+    - one [pizza](dish) with [mushrooms]{"entity": "ingredients", "role": "extra_ingredients"}, [onion]{"entity": "ingredients", "role": "extra_ingredients"} and [ham]{"entity": "ingredients", "role": "extra_ingredients"}
+    - i would like to order [burger](dish) without [tomato]{"entity": "ingredients", "role": "less_ingredients"}
+    - please make an order on [lasagne](dish) without [meat]{"entity": "ingredients", "role": "less_ingredients"}
+    - i would like to order [spaghetti carbonara] without [bacon]{"entity": "ingredients", "role": "less_ingredients"}
+    - add [pizza](dish) without [cheese]{"entity": "ingredients", "role": "less_ingredients"}
+    - add [spaghetti carbonara](dish) but without [eggs]{"entity": "ingredients", "role": "less_ingredients"}
+    - i would like to order [Hot-Dog](dish) with extra [onion]{"entity": "ingredients", "role": "extra_ingredients"} but without [mustard]{"entity": "ingredients", "role": "less_ingredients"}
+    - I want to order [pizza](dish) without [cheese]{"entity": "ingredients", "role": "less_ingredients"}, also please add more [onion]{"entity": "ingredients", "role": "extra_ingredients"} and [ham]{"entity": "ingredients", "role": "extra_ingredients"}
+
+- intent: summarize_order
+  examples: |
+    - show me my current order
+    - what have I ordered already?
+    - what is status of my order
+    - show me my order
+    - show my order
+    - can you show me my order?
+
+- intent: confirm_order
+  examples: |
+    - that's all i want
+    - that will be all
+    - that is it 
+    - it's all i want to order
+    - i want to confirm my order
+    - i want to set my order
+    - i would like to confirm my order
+
+- intent: reset_order
+  examples: |
+    - clear my order
+    - please, clear my order
+    - reset my order
+    - forget my order
+    - please abort my order
+    - can i make another order
+    - i would like to make new order
+
+- intent: confirm_order
+  examples: |
+    - that's all i want
+    - that will be all
+    - that is it 
+    - it's all i want to order
+
+- synonym: Hot-dog
+  examples: |
+    - hot dog

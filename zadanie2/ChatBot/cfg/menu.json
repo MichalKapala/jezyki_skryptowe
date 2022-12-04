@@ -1,0 +1,46 @@
+{
+  "dish": [
+    {
+      "id": 0, 
+      "name": "Lasagne",
+      "price": 16,
+      "preparation_time": 1,
+      "ingredients": ["Pasta", "Sauce", "Meat", "Sausage", "Bechamel Sauce"]
+    },
+    {
+      "id": 1, 
+      "name": "Pizza",
+      "price": 12,
+      "preparation_time": 0.5,
+      "ingredients": ["Dough", "Sauce", "Cheese"]
+    },
+    {
+      "id": 2, 
+      "name": "Hot-dog",
+      "price": 4,
+      "preparation_time": 0.1,
+      "ingredients": ["Bun", "Sausage", "onion", "mustard"]
+    },
+    {
+      "id": 3, 
+      "name": "Burger",
+      "price": 12.5,
+      "preparation_time": 0.2,
+      "ingredients": ["Bun", "Meat", "Mayonnaise", "Bacon", "Tomato", "Lettuce"]
+    },
+    {
+      "id": 4, 
+      "name": "Spaghetti Carbonara",
+      "price": 15,
+      "preparation_time": 0.5,
+      "ingredients": ["Spaghetti", "Bacon", "Parmesan", "Eggs"]
+    },
+    {
+      "id": 5, 
+      "name": "Tiramisu",
+      "price": 11,
+      "preparation_time": 0.15,
+      "ingredients": ["Mascarpone", "Coffee", "Biscuits", "Amaretto", "Cocoa"]
+    }
+  ]
+}

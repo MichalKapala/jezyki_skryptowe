@@ -1,0 +1,76 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Answer when asked for mood
+  steps:
+    - intent: how_are_you
+    - action: utter_imgood
+
+- rule: Answer if can make an order by bot
+  steps:
+    - intent: ask_if_can_order
+    - action: utter_canorder
+
+- rule: List menu anytime user ask about it
+  steps:
+    - intent: ask_menu
+    - action: action_list_menu
+
+- rule: List open hours anytime user ask about it
+  steps:
+    - intent: ask_open_hours
+    - action: action_list_open_hours
+
+- rule: Answer if restaurant is open at given time
+  steps:
+    - intent: ask_detail_open_hours
+    - action: action_answer_open_hours
+
+- rule: Make simple order
+  steps:
+    - intent: make_simple_order
+    - action: action_process_simple_order
+    - action: utter_anything_else
+
+- rule: Make order with extra
+  steps:
+    - intent: make_extra_order
+    - action: action_process_extra_order
+    - action: utter_anything_else
+
+- rule: Ask ingredients
+  steps:
+    - intent: ask_for_ingredients
+    - action: action_list_ingredients
+
+- rule: summarize order
+  steps:
+    - intent: summarize_order
+    - action: action_summarize_order
+
+- rule: confirm order
+  steps:
+    - intent: confirm_order
+    - action: action_confirm_order
+    - action: action_reset_order
+
+- rule: confirm order
+  steps:
+    - intent: reset_order
+    - action: action_reset_order
+
+- rule: answer purpose
+  steps:
+    - intent: ask_what_can_bot_do
+    - action: utter_answer_purpose
