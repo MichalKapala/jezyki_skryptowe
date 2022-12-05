@@ -11,9 +11,12 @@ Main purpose of this project is to write chat bot, using RASA framework. As a pa
 the mentioned platform were expected as well
 
 ## 2 Chatbot current capabilities
--
--
--
+- Listinng and answering about open hours.
+- Telling about dish ingredients
+- List menu
+- Collecting order 
+- Adding or removing ingredients from dish 
+- Confirming and summarizing current order
 
 ## 3. Project structure
 ````bash
@@ -31,12 +34,19 @@ the mentioned platform were expected as well
   ├── credentials.yml
   ├── data
   │   ├── ingredients.yml  # Ingredients lookup table
+  |   ├── misspells.yml
   │   ├── menu.yml # Menu lookup table
   │   ├── nlu.yml  # Training data
   │   ├── rules.yml # Rasa rules
   │   └── stories.yml # Simple stories
   ├── domain.yml # Rasa domain file
   ├── endpoints.yml
+  ├── example_slack_conversation //Slack conversation screenshots
+  |     │   ├── 1.png
+  |     │   ├── 2.png
+  |     │   └── 3.png
+  ├── scripts
+        │   └── GenerateMisspels.py // Common misspels generator 
   └── story_graph.dot
 ````
 
@@ -68,9 +78,10 @@ If the menu.json file was modifed (if new dishes were added) we should extract i
     
 After this steps our virtual enviroment is setup and ready to work
 
-## 4.2 Project discord setup
+## 4.2 Project slack setup
 
-    TODO
+    Integrated with slack by adding slack app. Tested using ngrok.
+    Not sure if some instructions can be provided.
 
 ## 5.1 Ubuntu terminal run
 
@@ -90,9 +101,10 @@ Finally we can launch our chatbot by:
     
     
     
- ## 5.2 Discord run
+ ## 5.2 Slack run
  
- TODO
+ As some evidence that slack integration works, you can see some screenshots from conversation in **example_slack_conversation** folder.
+ Additionally i can add you to slack space.
  
  ## 6 Known issues
  
