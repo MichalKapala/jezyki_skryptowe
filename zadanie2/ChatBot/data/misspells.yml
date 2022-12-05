@@ -1,0 +1,164 @@
+version: "3.1"
+nlu:
+  - synonym: Lasagne  
+    examples: |
+      - Lasage
+      - Lasane
+      - Lasage
+      - Lasage
+      - Lasane
+      - Laagne
+      - Lsagne
+      - Laagne
+      - asagne
+      - asagne
+      - Lasafne
+      - kasagne
+      - Lasagje
+      - Lasayne
+      - Laszgne
+      - Lazagne
+      - Lawagne
+      - Laxagne
+      - Lasagnw
+      - pasagne
+      - Lzsagne
+      - oasagne
+      - Lawagne
+      - oasagne
+      - Laxagne
+  - synonym: Pizza  
+    examples: |
+      - Pzza
+      - Piza
+      - Pzza
+      - Piza
+      - Pizz
+      - Piza
+      - Piza
+      - izza
+      - izza
+      - Pzza
+      - Pjzza
+      - Pisza
+      - Pizsa
+      - Pkzza
+      - Pizzq
+      - Pozza
+      - lizza
+      - Piaza
+      - Pizzx
+      - Pizxa
+      - Pizaa
+      - Pizxa
+      - Pizzx
+      - Pixza
+      - oizza
+  - synonym: Hot-dog  
+    examples: |
+      - Hot-dg
+      - Ho-dog
+      - ot-dog
+      - Ho-dog
+      - Hot-og
+      - Hot-dg
+      - Hotdog
+      - Ho-dog
+      - Hot-do
+      - Hot-do
+      - Hot_dog
+      - jot-dog
+      - Hkt-dog
+      - uot-dog
+      - Hot-fog
+      - Hot-dpg
+      - Hkt-dog
+      - Hot-eog
+      - not-dog
+      - not-dog
+      - Hpt-dog
+      - Hot-cog
+      - Hot dog
+      - Hit-dog
+      - Hot-doh
+  - synonym: Burger  
+    examples: |
+      - Buger
+      - Buger
+      - Brger
+      - Buger
+      - Brger
+      - urger
+      - urger
+      - urger
+      - Burer
+      - urger
+      - Burgdr
+      - Burter
+      - Burgef
+      - Burgee
+      - Butger
+      - Burfer
+      - Burgrr
+      - Burgwr
+      - Budger
+      - Burgee
+      - Byrger
+      - Burgee
+      - Bufger
+      - Burget
+      - Bjrger
+  - synonym: Spaghetti Carbonara  
+    examples: |
+      - Spaghetti Carbonar
+      - Spaghetti Carbnara
+      - Spaghetti Carbonra
+      - Saghetti Carbonara
+      - Spaghetti Cabonara
+      - Spaghetti Cabonara
+      - paghetti Carbonara
+      - Spaghett Carbonara
+      - Spagheti Carbonara
+      - Spaghetti arbonara
+      - Spaghetti Cafbonara
+      - Spaghetti Carbonarz
+      - Spaghetti Carbknara
+      - Spaghetti Carblnara
+      - epaghetti Carbonara
+      - Spaghetti Carbknara
+      - Spaghegti Carbonara
+      - Spaghetti Carbonsra
+      - Spqghetti Carbonara
+      - Spagyetti Carbonara
+      - Spaghefti Carbonara
+      - Spaghegti Carbonara
+      - Soaghetti Carbonara
+      - Spaghetti Carbonarw
+      - Spaghettj Carbonara
+  - synonym: Tiramisu  
+    examples: |
+      - Tiramsu
+      - Tramisu
+      - Tramisu
+      - Tiramiu
+      - Tiraisu
+      - Tiramsu
+      - Tiramis
+      - Tiramsu
+      - Tiramiu
+      - Tiramiu
+      - Tieamisu
+      - Tiralisu
+      - giramisu
+      - Turamisu
+      - Tirajisu
+      - firamisu
+      - yiramisu
+      - Tiramiwu
+      - Toramisu
+      - Tiramidu
+      - Tifamisu
+      - Tiramiwu
+      - Tieamisu
+      - Tiramisy
+      - Toramisu
