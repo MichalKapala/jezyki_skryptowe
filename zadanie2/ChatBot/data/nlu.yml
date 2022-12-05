@@ -146,7 +146,8 @@ nlu:
     - add [pizza](dish) without [cheese]{"entity": "ingredients", "role": "less_ingredients"}
     - add [spaghetti carbonara](dish) but without [eggs]{"entity": "ingredients", "role": "less_ingredients"}
     - i would like to order [Hot-Dog](dish) with extra [onion]{"entity": "ingredients", "role": "extra_ingredients"} but without [mustard]{"entity": "ingredients", "role": "less_ingredients"}
-    - I want to order [pizza](dish) without [cheese]{"entity": "ingredients", "role": "less_ingredients"}, also please add more [onion]{"entity": "ingredients", "role": "extra_ingredients"} and [ham]{"entity": "ingredients", "role": "extra_ingredients"}
+    - i want to order [pizza](dish) without [cheese]{"entity": "ingredients", "role": "less_ingredients"}, also please add more [onion]{"entity": "ingredients", "role": "extra_ingredients"} and [ham]{"entity": "ingredients", "role": "extra_ingredients"}
+    - i want to order [burger](dish) with extra [meat]{"entity": "ingredients", "role": "extra_ingredients"} but without [ham]{"entity": "ingredients", "role": "less_ingredients"}
 
 - intent: summarize_order
   examples: |
@@ -187,3 +188,8 @@ nlu:
 - synonym: Hot-dog
   examples: |
     - hot dog
+
+- synonym: spaghetti carbonara
+  examples: |
+    - spaghetti
+    - carbonara
