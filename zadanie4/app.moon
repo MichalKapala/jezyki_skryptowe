@@ -1,10 +1,6 @@
 lapis = require "lapis"
 import respond_to, json_params from require "lapis.application"
-
-
-lapis = require "lapis"
 db = require "lapis.db"
-models = require "models"
 import Model from require "lapis.db.model"
 
 class Category extends Model
